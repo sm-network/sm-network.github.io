@@ -1,678 +1,999 @@
 <!DOCTYPE html>
 <!-- saved from url=(0056)http://www.bristolmathsresearch.org/soft-matter-network/ -->
 <html style="     " class=" js csstransforms3d csstransitions" lang="en-GB">
-  <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <title>Soft Matter Network | School of Mathematics Research</title>
-    <link rel="pingback" href="http://www.bristolmathsresearch.org/xmlrpc.php">
-    <meta name="robots" content="noindex,follow">
-    <!--  Mobile viewport scale -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="dns-prefetch" href="http://s.w.org/">
-    <link rel="alternate" type="application/rss+xml" title="School of Mathematics Research » Feed"
-      href="https://www.bristolmathsresearch.org/feed/">
-    <link rel="alternate" type="application/rss+xml" title="School of Mathematics Research » Comments Feed"
-      href="https://www.bristolmathsresearch.org/comments/feed/">
-    <script type="text/javascript" async="" src="./content/ga.js"></script>
-    <script type="text/javascript">
-			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/www.bristolmathsresearch.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=1dd1c8c3f6735e178b0d3236768c20a5"}};
-			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
-		</script>
-    <script src="./content/wp-emoji-release.min.js"
-    type="text/javascript"
-    defer="defer"></script>
-    <style type="text/css">
-        img.wp-smiley,
-        img.emoji {
-            display: inline !important;
-            border: none !important;
-            box-shadow: none !important;
-            height: 1em !important;
-            width: 1em !important;
-            margin: 0 .07em !important;
-            vertical-align: -0.1em !important;
-            background: none !important;
-            padding: 0 !important;
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Soft Matter Network | School of Mathematics Research</title>
+  <link rel="pingback" href="http://www.bristolmathsresearch.org/xmlrpc.php">
+  <meta name="robots" content="noindex,follow">
+  <!--  Mobile viewport scale -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="dns-prefetch" href="http://s.w.org/">
+  <link rel="alternate" type="application/rss+xml" title="School of Mathematics Research » Feed" href="https://www.bristolmathsresearch.org/feed/">
+  <link rel="alternate" type="application/rss+xml" title="School of Mathematics Research » Comments Feed" href="https://www.bristolmathsresearch.org/comments/feed/">
+  <script type="text/javascript" async="" src="./content/ga.js"></script>
+  <script type="text/javascript">
+    window._wpemojiSettings = {
+      "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/",
+      "ext": ".png",
+      "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/",
+      "svgExt": ".svg",
+      "source": {
+        "concatemoji": "http:\/\/www.bristolmathsresearch.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=1dd1c8c3f6735e178b0d3236768c20a5"
+      }
+    };
+    ! function(a, b, c) {
+      function d(a, b) {
+        var c = String.fromCharCode;
+        l.clearRect(0, 0, k.width, k.height), l.fillText(c.apply(this, a), 0, 0);
+        var d = k.toDataURL();
+        l.clearRect(0, 0, k.width, k.height), l.fillText(c.apply(this, b), 0, 0);
+        var e = k.toDataURL();
+        return d === e
+      }
+
+      function e(a) {
+        var b;
+        if (!l || !l.fillText) return !1;
+        switch (l.textBaseline = "top", l.font = "600 32px Arial", a) {
+          case "flag":
+            return !(b = d([55356, 56826, 55356, 56819], [55356, 56826, 8203, 55356, 56819])) && (b = d([55356, 57332, 56128, 56423, 56128, 56418, 56128, 56421, 56128, 56430, 56128, 56423, 56128, 56447], [55356, 57332, 8203, 56128, 56423, 8203, 56128, 56418, 8203, 56128, 56421, 8203, 56128, 56430, 8203, 56128, 56423, 8203, 56128, 56447]), !b);
+          case "emoji":
+            return b = d([55358, 56760, 9792, 65039], [55358, 56760, 8203, 9792, 65039]), !b
         }
-    </style>
-    <style type="text/css">
-        @media only screen and (min-width: 980px) {
-        body.one-col-960 #main-sidebar-container { width: 100%; }
-        body.one-col-960 #main-sidebar-container #main { width: 100%; }
-        }
-    </style>
-    <link rel="stylesheet" id="wp-block-library-css" href="./content/style.min.css" type="text/css" media="all">
-    <link rel="stylesheet" id="juiz_last_tweet_widget-css" href="./content/juiz_last_tweet.css" type="text/css" media="all">
-    <link rel="stylesheet" id="rs-plugin-settings-css" href="./content/settings.css" type="text/css" media="all">
-    <style id="rs-plugin-settings-inline-css" type="text/css"> #rs-demo-id {} </style>
-    <link rel="stylesheet" id="mediaelement-css" href="./content/mediaelementplayer-legacy.min.css" type="text/css" media="all">
-    <link rel="stylesheet" id="wp-mediaelement-css" href="./content/wp-mediaelement.min.css" type="text/css" media="all">
-    <link rel="stylesheet" id="views-pagination-style-css" href="./content/wpv-pagination.css" type="text/css" media="all">
-    <style id="views-pagination-style-inline-css" type="text/css">
-.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default > span.wpv-sort-list,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default .wpv-sort-list-item {border-color: #cdcdcd;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default .wpv-sort-list-item a {color: #444;background-color: #fff;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default a:hover,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default a:focus {color: #000;background-color: #eee;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default .wpv-sort-list-item.wpv-sort-list-current a {color: #000;background-color: #eee;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey > span.wpv-sort-list,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey .wpv-sort-list-item {border-color: #cdcdcd;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey .wpv-sort-list-item a {color: #444;background-color: #eeeeee;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey a:hover,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey a:focus {color: #000;background-color: #e5e5e5;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey .wpv-sort-list-item.wpv-sort-list-current a {color: #000;background-color: #e5e5e5;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-blue > span.wpv-sort-list,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-blue .wpv-sort-list-item {border-color: #0099cc;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-blue .wpv-sort-list-item a {color: #444;background-color: #cbddeb;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-blue a:hover,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-blue a:focus {color: #000;background-color: #95bedd;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-blue .wpv-sort-list-item.wpv-sort-list-current a {color: #000;background-color: #95bedd;}
-</style> <link rel="stylesheet" id="simcal-qtip-css" href="./content/jquery.qtip.min.css" type="text/css" media="all">
-    <link rel="stylesheet" id="simcal-default-calendar-grid-css" href="./content/default-calendar-grid.min.css" type="text/css" media="all">
-    <link rel="stylesheet" id="simcal-default-calendar-list-css" href="./content/default-calendar-list.min.css" type="text/css" media="all">
-    <link rel="stylesheet" id="theme-stylesheet-css" href="./content/style.css" type="text/css" media="all">
-    <link rel="stylesheet" id="sccss_style-css" href="./content/saved_resource" type="text/css" media="all">
-    <!--[if lt IE 9]>
+        return !1
+      }
+
+      function f(a) {
+        var c = b.createElement("script");
+        c.src = a, c.defer = c.type = "text/javascript", b.getElementsByTagName("head")[0].appendChild(c)
+      }
+      var g, h, i, j, k = b.createElement("canvas"),
+        l = k.getContext && k.getContext("2d");
+      for (j = Array("flag", "emoji"), c.supports = {
+          everything: !0,
+          everythingExceptFlag: !0
+        }, i = 0; i < j.length; i++) c.supports[j[i]] = e(j[i]), c.supports.everything = c.supports.everything && c.supports[j[i]], "flag" !== j[i] && (c.supports.everythingExceptFlag = c.supports.everythingExceptFlag && c.supports[j[i]]);
+      c.supports.everythingExceptFlag = c.supports.everythingExceptFlag && !c.supports.flag, c.DOMReady = !1, c.readyCallback = function() {
+        c.DOMReady = !0
+      }, c.supports.everything || (h = function() {
+        c.readyCallback()
+      }, b.addEventListener ? (b.addEventListener("DOMContentLoaded", h, !1), a.addEventListener("load", h, !1)) : (a.attachEvent("onload", h), b.attachEvent("onreadystatechange", function() {
+        "complete" === b.readyState && c.readyCallback()
+      })), g = c.source || {}, g.concatemoji ? f(g.concatemoji) : g.wpemoji && g.twemoji && (f(g.twemoji), f(g.wpemoji)))
+    }(window, document, window._wpemojiSettings);
+  </script>
+  <script src="./content/wp-emoji-release.min.js" type="text/javascript" defer="defer"></script>
+  <style type="text/css">
+    img.wp-smiley,
+    img.emoji {
+      display: inline !important;
+      border: none !important;
+      box-shadow: none !important;
+      height: 1em !important;
+      width: 1em !important;
+      margin: 0 .07em !important;
+      vertical-align: -0.1em !important;
+      background: none !important;
+      padding: 0 !important;
+    }
+  </style>
+  <style type="text/css">
+    @media only screen and (min-width: 980px) {
+      body.one-col-960 #main-sidebar-container {
+        width: 100%;
+      }
+
+      body.one-col-960 #main-sidebar-container #main {
+        width: 100%;
+      }
+    }
+  </style>
+  <link rel="stylesheet" id="wp-block-library-css" href="./content/style.min.css" type="text/css" media="all">
+  <link rel="stylesheet" id="juiz_last_tweet_widget-css" href="./content/juiz_last_tweet.css" type="text/css" media="all">
+  <link rel="stylesheet" id="rs-plugin-settings-css" href="./content/settings.css" type="text/css" media="all">
+  <style id="rs-plugin-settings-inline-css" type="text/css">
+    #rs-demo-id {}
+  </style>
+  <link rel="stylesheet" id="mediaelement-css" href="./content/mediaelementplayer-legacy.min.css" type="text/css" media="all">
+  <link rel="stylesheet" id="wp-mediaelement-css" href="./content/wp-mediaelement.min.css" type="text/css" media="all">
+  <link rel="stylesheet" id="views-pagination-style-css" href="./content/wpv-pagination.css" type="text/css" media="all">
+  <style id="views-pagination-style-inline-css" type="text/css">
+    .wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default>span.wpv-sort-list,
+    .wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default .wpv-sort-list-item {
+      border-color: #cdcdcd;
+    }
+
+    .wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default .wpv-sort-list-item a {
+      color: #444;
+      background-color: #fff;
+    }
+
+    .wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default a:hover,
+    .wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default a:focus {
+      color: #000;
+      background-color: #eee;
+    }
+
+    .wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default .wpv-sort-list-item.wpv-sort-list-current a {
+      color: #000;
+      background-color: #eee;
+    }
+
+    .wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey>span.wpv-sort-list,
+    .wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey .wpv-sort-list-item {
+      border-color: #cdcdcd;
+    }
+
+    .wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey .wpv-sort-list-item a {
+      color: #444;
+      background-color: #eeeeee;
+    }
+
+    .wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey a:hover,
+    .wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey a:focus {
+      color: #000;
+      background-color: #e5e5e5;
+    }
+
+    .wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey .wpv-sort-list-item.wpv-sort-list-current a {
+      color: #000;
+      background-color: #e5e5e5;
+    }
+
+    .wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-blue>span.wpv-sort-list,
+    .wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-blue .wpv-sort-list-item {
+      border-color: #0099cc;
+    }
+
+    .wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-blue .wpv-sort-list-item a {
+      color: #444;
+      background-color: #cbddeb;
+    }
+
+    .wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-blue a:hover,
+    .wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-blue a:focus {
+      color: #000;
+      background-color: #95bedd;
+    }
+
+    .wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-blue .wpv-sort-list-item.wpv-sort-list-current a {
+      color: #000;
+      background-color: #95bedd;
+    }
+  </style>
+  <link rel="stylesheet" id="simcal-qtip-css" href="./content/jquery.qtip.min.css" type="text/css" media="all">
+  <link rel="stylesheet" id="simcal-default-calendar-grid-css" href="./content/default-calendar-grid.min.css" type="text/css" media="all">
+  <link rel="stylesheet" id="simcal-default-calendar-list-css" href="./content/default-calendar-list.min.css" type="text/css" media="all">
+  <link rel="stylesheet" id="theme-stylesheet-css" href="./content/style.css" type="text/css" media="all">
+  <link rel="stylesheet" id="sccss_style-css" href="./content/saved_resource" type="text/css" media="all">
+  <!--[if lt IE 9]>
         <link href="http://www.bristolmathsresearch.org/wp-content/themes/canvas/css/non-responsive.css" rel="stylesheet" type="text/css" /><style type="text/css">.col-full, #wrapper { width: 960px; max-width: 960px; } #inner-wrapper { padding: 0; } body.full-width #header, #nav-container, body.full-width #content, body.full-width #footer-widgets, body.full-width #footer { padding-left: 0; padding-right: 0; } body.fixed-mobile #top, body.fixed-mobile #header-container, body.fixed-mobile #footer-container, body.fixed-mobile #nav-container, body.fixed-mobile #footer-widgets-container { min-width: 960px; padding: 0 1em; } body.full-width #content { width: auto; padding: 0 1em;}</style>
     <![endif]-->
-    <script type="text/javascript" src="./content/jquery.js"></script>
-    <script type="text/javascript" src="./content/jquery-migrate.min.js"></script>
-    <script type="text/javascript" src="./content/jquery.themepunch.tools.min.js"></script>
-    <script type="text/javascript" src="./content/jquery.themepunch.revolution.min.js"></script>
-    <script type="text/javascript"></script>
-    <script type="text/javascript" src="./content/mediaelement-and-player.min.js"></script>
-    <script type="text/javascript" src="./content/mediaelement-migrate.min.js"></script>
-    <script type="text/javascript">
-        /* <![CDATA[ */
-        var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/","classPrefix":"mejs-","stretching":"responsive"};
-        var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/","classPrefix":"mejs-","stretching":"responsive"};
-        /* ]]> */
-    </script>
-    <script type="text/javascript" src="./content/third-party.min.js"></script>
-    <script type="text/javascript" src="./content/modernizr.min.js"></script>
-    <script type="text/javascript" src="./content/general.min.js"></script>
-    <script type="text/javascript" src="./content/external-tracking.min.js"></script>
-    <link rel="https://api.w.org/" href="https://www.bristolmathsresearch.org/wp-json/">
-    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.bristolmathsresearch.org/xmlrpc.php?rsd">
-    <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.bristolmathsresearch.org/wp-includes/wlwmanifest.xml">
-    <link rel="canonical" href="https://www.bristolmathsresearch.org/soft-matter-network/">
-    <link rel="shortlink" href="https://www.bristolmathsresearch.org/?p=3553">
-    <link rel="alternate" type="application/json+oembed" href="https://www.bristolmathsresearch.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.bristolmathsresearch.org%2Fsoft-matter-network%2F">
-    <link rel="alternate" type="text/xml+oembed" href="https://www.bristolmathsresearch.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.bristolmathsresearch.org%2Fsoft-matter-network%2F&amp;format=xml">
-    <style type="text/css"></style>
-    <script type="text/javascript">
-        (function(url){
-            if(/(?:Chrome\/26\.0\.1410\.63 Safari\/537\.31|WordfenceTestMonBot)/.test(navigator.userAgent)){ return; }
-            var addEvent = function(evt, handler) {
-                if (window.addEventListener) {
-                    document.addEventListener(evt, handler, false);
-                } else if (window.attachEvent) {
-                    document.attachEvent('on' + evt, handler);
-                }
-            };
-            var removeEvent = function(evt, handler) {
-                if (window.removeEventListener) {
-                    document.removeEventListener(evt, handler, false);
-                } else if (window.detachEvent) {
-                    document.detachEvent('on' + evt, handler);
-                }
-            };
-            var evts = 'contextmenu dblclick drag dragend dragenter dragleave dragover dragstart drop keydown keypress keyup mousedown mousemove mouseout mouseover mouseup mousewheel scroll'.split(' ');
-            var logHuman = function() {
-                if (window.wfLogHumanRan) { return; }
-                window.wfLogHumanRan = true;
-                var wfscr = document.createElement('script');
-                wfscr.type = 'text/javascript';
-                wfscr.async = true;
-                wfscr.src = url + '&r=' + Math.random();
-                (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(wfscr);
-                for (var i = 0; i < evts.length; i++) {
-                    removeEvent(evts[i], logHuman);
-                }
-            };
-            for (var i = 0; i < evts.length; i++) {
-                addEvent(evts[i], logHuman);
-            }
-        })('//www.bristolmathsresearch.org/?wordfence_lh=1&hid=9A3517B10B9A84C2EB13A4B3ECEA6561');
-    </script>
-    <style type="text/css">
-        body {background-repeat:no-repeat;background-position:top left;background-attachment:scroll;border-top:0px solid #000000;}
-        a:link, a:visited, #loopedSlider a.flex-prev:hover, #loopedSlider a.flex-next:hover {color:#1c7698} .quantity .plus, .quantity .minus {background-color: #1c7698;}
-        a:hover, .post-more a:hover, .post-meta a:hover, .post p.tags a:hover {color:#002f5f}
-        body #wrapper .button, body #wrapper #content .button, body #wrapper #content .button:visited, body #wrapper #content .reply a, body #wrapper #content #respond .form-submit input#submit, input[type=submit], body #wrapper #searchsubmit, #navigation ul.cart .button, body #wrapper .woo-sc-button {border: none; background:#1c7698}
-        body #wrapper .button:hover, body #wrapper #content .button:hover, body #wrapper #content .reply a:hover, body #wrapper #content #respond .form-submit input#submit:hover, input[type=submit]:hover, body #wrapper #searchsubmit:hover, #navigation ul.cart .button:hover, body #wrapper .woo-sc-button:hover {border: none; background:#002f5f}
-        #header {background-color:#002f5f;background-repeat:no-repeat;background-position:left top;margin-top:0px;margin-bottom:0px;padding-top:30px;padding-bottom:30px;border:0px solid ;}
-        #logo {padding-left:10px;}.header-widget {padding-right:10px;}
-        #logo .site-title a {font:normal 30px/1em Arial, sans-serif;color:#ffffff;}
-        #logo .site-description {font:300 13px/1em Arial, sans-serif;color:#999999;}
-        #header-container{background-color:#002f5f;}#footer-widgets-container{background-color:#f0f0f0}#footer-widgets{border:none;}#footer-container{background-color:#222222}#footer-container{border-top:1px solid #dbdbdb;}#footer {border-width: 0 !important;}
-        body, p { font:300 14px/1.5em Arial, sans-serif;color:#555555; }
-        h1 { font:bold 28px/1.2em Arial, sans-serif;color:#002f5f; }h2 { font:bold 24px/1.2em Arial, sans-serif;color:#002f5f; }h3 { font:bold 20px/1.2em Arial, sans-serif;color:#002f5f; }h4 { font:bold 16px/1.2em Arial, sans-serif;color:#002f5f; }h5 { font:bold 14px/1.2em Arial, sans-serif;color:#222222; }h6 { font:bold 12px/1.2em Arial, sans-serif;color:#222222; }
-        .page-title, .post .title, .page .title {font:bold 28px/1.1em Arial, sans-serif;color:#222222;}
-        .post .title a:link, .post .title a:visited, .page .title a:link, .page .title a:visited {color:#222222}
-        .post-meta { font:300 12px/1.5em Arial, sans-serif;color:#999999; }
-        .entry, .entry p{ font:300 15px/1.5em Arial, sans-serif;color:#555555; }
-        .post-more {font:300 13px/1.5em Arial, sans-serif;color:;border-top:0px solid #e6e6e6;border-bottom:0px solid #e6e6e6;}
-        #post-author, #connect {border-top:1px solid #e6e6e6;border-bottom:1px solid #e6e6e6;border-left:1px solid #e6e6e6;border-right:1px solid #e6e6e6;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;background-color:#fafafa}
-        .nav-entries a, .woo-pagination { font:300 13px/1em Arial, sans-serif;color:#888; }
-        .woo-pagination a, .woo-pagination a:hover {color:#888!important}
-        #tabs ul.wooTabs li a, .widget_woodojo_tabs .tabbable .nav-tabs li a { font-family: ; }
-        @media only screen and (min-width:768px) {
-        }
-        #footer, #footer p { font:300 13px/1.4em Arial, sans-serif;color:#999999; }
-        #footer {border-top:1px solid #dbdbdb;border-bottom:0px solid ;border-left:0px solid ;border-right:0px solid ;border-radius:0px; -moz-border-radius:0px; -webkit-border-radius:0px;}
-        .archive_header { font:bold 18px/1em Arial, sans-serif;color:#222222; }
-        .archive_header {border-bottom:1px solid #e6e6e6;}
-    </style><!-- Woo Shortcodes CSS -->
-    <link href="./content/shortcodes.css"
-      rel="stylesheet"
-      type="text/css">
-    <!-- Custom Stylesheet -->
-    <link href="./content/custom.css"
-      rel="stylesheet"
-      type="text/css">
-    <!-- Theme version -->
-    <meta name="generator" content="Canvas 5.12.0">
-    <meta name="generator" content="WooFramework 6.2.8">
-    <style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
-    <meta name="generator" content="Powered by Slider Revolution 5.4.7.4 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface.">
-    <!-- Google Analytics Tracking by Google Analyticator 6.5.4: http://www.videousermanuals.com/google-analyticator/ -->
-    <script type="text/javascript">
-    var analyticsFileTypes = [''];
-    var analyticsSnippet = 'enabled';
-    var analyticsEventTracking = 'enabled';
-</script>
-    <script type="text/javascript">
-        var _gaq = _gaq || [];
+  <script type="text/javascript" src="./content/jquery.js"></script>
+  <script type="text/javascript" src="./content/jquery-migrate.min.js"></script>
+  <script type="text/javascript" src="./content/jquery.themepunch.tools.min.js"></script>
+  <script type="text/javascript" src="./content/jquery.themepunch.revolution.min.js"></script>
+  <script type="text/javascript"></script>
+  <script type="text/javascript" src="./content/mediaelement-and-player.min.js"></script>
+  <script type="text/javascript" src="./content/mediaelement-migrate.min.js"></script>
+  <script type="text/javascript">
+    /* <![CDATA[ */
+    var _wpmejsSettings = {
+      "pluginPath": "\/wp-includes\/js\/mediaelement\/",
+      "classPrefix": "mejs-",
+      "stretching": "responsive"
+    };
+    var _wpmejsSettings = {
+      "pluginPath": "\/wp-includes\/js\/mediaelement\/",
+      "classPrefix": "mejs-",
+      "stretching": "responsive"
+    };
+    /* ]]> */
+  </script>
+  <script type="text/javascript" src="./content/third-party.min.js"></script>
+  <script type="text/javascript" src="./content/modernizr.min.js"></script>
+  <script type="text/javascript" src="./content/general.min.js"></script>
+  <script type="text/javascript" src="./content/external-tracking.min.js"></script>
+  <link rel="https://api.w.org/" href="https://www.bristolmathsresearch.org/wp-json/">
+  <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.bristolmathsresearch.org/xmlrpc.php?rsd">
+  <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.bristolmathsresearch.org/wp-includes/wlwmanifest.xml">
+  <link rel="canonical" href="https://www.bristolmathsresearch.org/soft-matter-network/">
+  <link rel="shortlink" href="https://www.bristolmathsresearch.org/?p=3553">
+  <link rel="alternate" type="application/json+oembed" href="https://www.bristolmathsresearch.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.bristolmathsresearch.org%2Fsoft-matter-network%2F">
+  <link rel="alternate" type="text/xml+oembed" href="https://www.bristolmathsresearch.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.bristolmathsresearch.org%2Fsoft-matter-network%2F&amp;format=xml">
+  <style type="text/css"></style>
+  <style type="text/css">
+    body {
+      background-repeat: no-repeat;
+      background-position: top left;
+      background-attachment: scroll;
+      border-top: 0px solid #000000;
+    }
 
-        _gaq.push(['_setAccount', 'UA-96874972-1']);
-        _gaq.push(['_addDevId', 'i9k95']); // Google Analyticator App ID with Google
-        _gaq.push(['_trackPageview']);
+    a:link,
+    a:visited,
+    #loopedSlider a.flex-prev:hover,
+    #loopedSlider a.flex-next:hover {
+      color: #1c7698
+    }
 
-        (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-                            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-                            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        })();
-        </script>
-    <script type="text/javascript">function setREVStartSize(e){									
-                        try{ e.c=jQuery(e.c);var i=jQuery(window).width(),t=9999,r=0,n=0,l=0,f=0,s=0,h=0;
-                            if(e.responsiveLevels&&(jQuery.each(e.responsiveLevels,function(e,f){f>i&&(t=r=f,l=e),i>f&&f>r&&(r=f,n=e)}),t>r&&(l=n)),f=e.gridheight[l]||e.gridheight[0]||e.gridheight,s=e.gridwidth[l]||e.gridwidth[0]||e.gridwidth,h=i/s,h=h>1?1:h,f=Math.round(h*f),"fullscreen"==e.sliderLayout){var u=(e.c.width(),jQuery(window).height());if(void 0!=e.fullScreenOffsetContainer){var c=e.fullScreenOffsetContainer.split(",");if (c) jQuery.each(c,function(e,i){u=jQuery(i).length>0?u-jQuery(i).outerHeight(!0):u}),e.fullScreenOffset.split("%").length>1&&void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0?u-=jQuery(window).height()*parseInt(e.fullScreenOffset,0)/100:void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0&&(u-=parseInt(e.fullScreenOffset,0))}f=u}else void 0!=e.minHeight&&f<e.minHeight&&(f=e.minHeight);e.c.closest(".rev_slider_wrapper").css({height:f})					
-                        }catch(d){console.log("Failure at Presize of Slider:"+d)}						
-                    };</script>
-    <style id="fit-vids-style">.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style>
-    <!--[if IE 7]><style>
+    .quantity .plus,
+    .quantity .minus {
+      background-color: #1c7698;
+    }
+
+    a:hover,
+    .post-more a:hover,
+    .post-meta a:hover,
+    .post p.tags a:hover {
+      color: #002f5f
+    }
+
+    body #wrapper .button,
+    body #wrapper #content .button,
+    body #wrapper #content .button:visited,
+    body #wrapper #content .reply a,
+    body #wrapper #content #respond .form-submit input#submit,
+    input[type=submit],
+    body #wrapper #searchsubmit,
+    #navigation ul.cart .button,
+    body #wrapper .woo-sc-button {
+      border: none;
+      background: #1c7698
+    }
+
+    body #wrapper .button:hover,
+    body #wrapper #content .button:hover,
+    body #wrapper #content .reply a:hover,
+    body #wrapper #content #respond .form-submit input#submit:hover,
+    input[type=submit]:hover,
+    body #wrapper #searchsubmit:hover,
+    #navigation ul.cart .button:hover,
+    body #wrapper .woo-sc-button:hover {
+      border: none;
+      background: #002f5f
+    }
+
+    #header {
+      background-color: #002f5f;
+      background-repeat: no-repeat;
+      background-position: left top;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      border: 0px solid;
+    }
+
+    #logo {
+      padding-left: 10px;
+    }
+
+    .header-widget {
+      padding-right: 10px;
+    }
+
+    #logo .site-title a {
+      font: normal 30px/1em Arial, sans-serif;
+      color: #ffffff;
+    }
+
+    #logo .site-description {
+      font: 300 13px/1em Arial, sans-serif;
+      color: #999999;
+    }
+
+    #header-container {
+      background-color: #002f5f;
+    }
+
+    #footer-widgets-container {
+      background-color: #f0f0f0
+    }
+
+    #footer-widgets {
+      border: none;
+    }
+
+    #footer-container {
+      background-color: #222222
+    }
+
+    #footer-container {
+      border-top: 1px solid #dbdbdb;
+    }
+
+    #footer {
+      border-width: 0 !important;
+    }
+
+    body,
+    p {
+      font: 300 14px/1.5em Arial, sans-serif;
+      color: #555555;
+    }
+
+    h1 {
+      font: bold 28px/1.2em Arial, sans-serif;
+      color: #002f5f;
+    }
+
+    h2 {
+      font: bold 24px/1.2em Arial, sans-serif;
+      color: #002f5f;
+    }
+
+    h3 {
+      font: bold 20px/1.2em Arial, sans-serif;
+      color: #002f5f;
+    }
+
+    h4 {
+      font: bold 16px/1.2em Arial, sans-serif;
+      color: #002f5f;
+    }
+
+    h5 {
+      font: bold 14px/1.2em Arial, sans-serif;
+      color: #222222;
+    }
+
+    h6 {
+      font: bold 12px/1.2em Arial, sans-serif;
+      color: #222222;
+    }
+
+    .page-title,
+    .post .title,
+    .page .title {
+      font: bold 28px/1.1em Arial, sans-serif;
+      color: #222222;
+    }
+
+    .post .title a:link,
+    .post .title a:visited,
+    .page .title a:link,
+    .page .title a:visited {
+      color: #222222
+    }
+
+    .post-meta {
+      font: 300 12px/1.5em Arial, sans-serif;
+      color: #999999;
+    }
+
+    .entry,
+    .entry p {
+      font: 300 15px/1.5em Arial, sans-serif;
+      color: #555555;
+    }
+
+    .post-more {
+      font: 300 13px/1.5em Arial, sans-serif;
+      color: ;
+      border-top: 0px solid #e6e6e6;
+      border-bottom: 0px solid #e6e6e6;
+    }
+
+    #post-author,
+    #connect {
+      border-top: 1px solid #e6e6e6;
+      border-bottom: 1px solid #e6e6e6;
+      border-left: 1px solid #e6e6e6;
+      border-right: 1px solid #e6e6e6;
+      border-radius: 5px;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+      background-color: #fafafa
+    }
+
+    .nav-entries a,
+    .woo-pagination {
+      font: 300 13px/1em Arial, sans-serif;
+      color: #888;
+    }
+
+    .woo-pagination a,
+    .woo-pagination a:hover {
+      color: #888 !important
+    }
+
+    #tabs ul.wooTabs li a,
+    .widget_woodojo_tabs .tabbable .nav-tabs li a {
+      font-family: ;
+    }
+
+    @media only screen and (min-width:768px) {}
+
+    #footer,
+    #footer p {
+      font: 300 13px/1.4em Arial, sans-serif;
+      color: #999999;
+    }
+
+    #footer {
+      border-top: 1px solid #dbdbdb;
+      border-bottom: 0px solid;
+      border-left: 0px solid;
+      border-right: 0px solid;
+      border-radius: 0px;
+      -moz-border-radius: 0px;
+      -webkit-border-radius: 0px;
+    }
+
+    .archive_header {
+      font: bold 18px/1em Arial, sans-serif;
+      color: #222222;
+    }
+
+    .archive_header {
+      border-bottom: 1px solid #e6e6e6;
+    }
+  </style><!-- Woo Shortcodes CSS -->
+  <link href="./content/shortcodes.css" rel="stylesheet" type="text/css">
+  <!-- Custom Stylesheet -->
+  <link href="./content/custom.css" rel="stylesheet" type="text/css">
+  <!-- Theme version -->
+  <meta name="generator" content="Canvas 5.12.0">
+  <meta name="generator" content="WooFramework 6.2.8">
+  <style type="text/css">
+    .recentcomments a {
+      display: inline !important;
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+  </style>
+  <meta name="generator" content="Powered by Slider Revolution 5.4.7.4 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface.">
+  <!--[if IE 7]><style>
 .wpv-pagination { *zoom: 1; }</style><![endif]-->
-    <script type="text/javascript" async="" src="./content/saved_resource%281%29"></script>
-    <!-- Custom CSS Styling -->
-    <style>
-        #logo_column {
-              float: left;
-              width: 30%;
-              margin-right: 3%;
-            }
-        #logo_row::after {
-              content: "";
-              clear: both;
-              display: table;
-            }
-    </style>
-  </head>
-    
-  <body class="page-template-default page page-id-3553 safari alt-style-default one-col width-960 one-col-960 full-width full-header full-footer">
-    <div id="wrapper">
-      <div id="inner-wrapper">
-        <!--#header-container-->
-        <div id="header-container">
-          <header id="header" class="col-full">
-            <h1 id="logo"> <span class="title" style="color:white">Soft Matter Network</span> </h1>
-            <div class="header-widget">
-                <div id="logo_row">
-                    <div id="logo_column">
-                        <a href="https://www.bris.ac.uk/">
-                            <img src="./content/uob_logo_white.png" alt="University of Bristol">
-                        </a>
-                    </div>
-                    <div id="logo_column">
-                        <a href="https://www.exeter.ac.uk">
-                            <img src="./content/uoex_logo_white.png" alt="University of Exeter">
-                        </a>
-                    </div>
-                    <div id="logo_column">
-                        <a href="https://www.bath.ac.uk">
-                            <img src="./content/uobath_logo_white.png" alt="University of Bath">
-                        </a>
-                    </div>
-                </div>
-            </div>
-          </header>
-        </div>
-        <!--/#header-container-->
-        <!--#nav-container-->
-        <!--/#nav-container-->
-        <!-- #content Starts -->
-        <div id="content" class="col-full">
-          <div id="main-sidebar-container">
-            <!-- #main Starts -->
-            <section id="main">
-              <div class="breadcrumb breadcrumbs woo-breadcrumbs"></div>
-              <article class="post-3553 page type-page status-publish hentry">
-                <section class="entry">
-                  <div class="threecol-one">
-                    <div id="links2">
-                      
-                      <h2><img class="wp-image-3701 alignnone" src="./content/poster.png"
-                          alt=""
-                          height="736"
-                          width="520"></h2>
-                      <div>&nbsp;</div>
-                      <div id="links2">
-                        <h2>Regular seminar series:</h2>
-                        <h4><a href="https://www.bristolmathsresearch.org/events/fluids-and-materials/">Fluids
-                            and Materials Seminars</a></h4>
-                        <h4><a href="http://www.bristol.ac.uk/physics/events/theoretical/">Theoretical
-                            Physics and Biological Soft and Complex Matter
-                            Seminars</a></h4>
-                        <h4><a href="https://www.bristolmathsresearch.org/events/mathematical-physics/">Mathematical
-                            Physics Seminars</a></h4>
-                        <h4><a href="http://www.bristol.ac.uk/physics/events/colloquia/">Physics
-                            Colloquia</a></h4>
-                        <h4><a href="http://www.bristol.ac.uk/chemistry/events/">Chemistry
-                            Seminars and Events</a></h4>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="threecol-two last">
-                    <p>The <strong>Soft Matter Network</strong> brings
-                      together researchers working in Soft Materials across the
-                      University from nine departments, including
-                      Biochemistry, Cellular and Molecular Medicine, Earth
-                      Sciences, Engineering Maths and Physiology, Pharmacology
-                      and Neuroscience in addition to the traditional areas of
-                      Physics, Chemistry and Maths.</p>
-                    <p>In time we hope this will lead to productive
-                      collaborations and provide opportunities for new
-                      research directions.</p>
-                    <p>The network launched on Wed. 5th Dec 2018 (poster on the
-                      left).</p>
-                    
-                  <h1>Upcoming events and seminars:</h1>
-                    
-                  </div>
-                  <div class="clear"></div>
-                  <div id="links2">
-                    <h2>Soft Matter Network Events</h2>
-                  </div>
-                  <h3 class="p1"><em>International Soft Matter Workshop IX</em>,
-                    Cornwall, February 28-March 2 2019</h3>
-                  <h3 class="p1"><em>Soft Matter of Life</em>, Symposium,
-                    plenary talk&nbsp; by Stephen Mann, May 2019</h3>
-                  <h3 class="p1"><em>Soft Matter in Geological Systems</em>,
-                    Heidy Mader, late spring 2019</h3>
-                  <h3 class="p1"><em>Water UK</em>,
-                    John Russo, late spring 2019</h3>
-                  <h3><em>Nucleation and Glassy Behaviour in Aerosols</em>,
-                    Jonathan Reid, early summer 2019</h3>
-                  <p><img class="alignnone wp-image-3726 " src="./content/cornwall2017-300x163.jpg"
-                      alt=""
-                      srcset="https://www.bristolmathsresearch.org/wp-content/uploads/2018/12/cornwall2017-300x163.jpg 300w, https://www.bristolmathsresearch.org/wp-content/uploads/2018/12/cornwall2017-768x418.jpg 768w, https://www.bristolmathsresearch.org/wp-content/uploads/2018/12/cornwall2017-1024x558.jpg 1024w"
-                      sizes="(max-width: 600px) 100vw, 600px"
-                      height="326"
-                      width="600"></p>
-                  <div>&nbsp;</div>
-                  <h2>People</h2>
-                  <table>
-                    <tbody>
-                      <tr>
-                        <th>
-                          <h3>Physics</h3>
-                        </th>
-                        <th>
-                          <h3>Chemistry</h3>
-                        </th>
-                        <th>
-                          <h3>Mathematics</h3>
-                        </th>
-                      </tr>
-                      <tr>
-                        <td><a href="http://www.bris.ac.uk/physics/people/ashraf-a-alam/overview.html">Ashraf
-                            Alam</a></td>
-                        <td><a href="http://www.bris.ac.uk/chemistry/people/paul-bartlett/index.html">Paul
-                            Bartlett</a></td>
-                        <td><a href="https://www.isaacchenchiah.org/">Isaac
-                            Chenchiah/</a></td>
-                      </tr>
-                      <tr>
-                        <td><a href="http://www.bristol.ac.uk/physics/people/adrian-c-barnes/overview.html">Adrian
-                            Barnes</a></td>
-                        <td><a href="http://www.bris.ac.uk/chemistry/people/wuge-h-briscoe/index.html">Wuge
-                            Briscoe</a></td>
-                        <td><a href="http://www.bristol.ac.uk/maths/people/carl-p-dettmann/index.html">Carl
-                            Dettmann</a></td>
-                      </tr>
-                      <tr>
-                        <td><a href="http://www.bris.ac.uk/physics/people/duncan-r-casey/index.html">Duncan
-                            Casey</a></td>
-                        <td><a href="http://www.chm.bris.ac.uk/pt/jeroen/jsvdhome.html">Jeroen
-                            van Duijneveldt</a></td>
-                        <td><a href="https://jpkeating.wordpress.com/">Jon
-                            Keating</a></td>
-                      </tr>
-                      <tr>
-                        <td><a href="http://www.bris.ac.uk/physics/people/person/michael-f-faulkner/overview.html">Michael
-                            Faulkner</a></td>
-                        <td><a href="http://www.stephenmann.co.uk/">Steve Mann</a></td>
-                        <td><a href="https://people.maths.bris.ac.uk/%7Emajge/">Jens
-                            Eggers</a></td>
-                      </tr>
-                      <tr>
-                        <td><a href="http://www.bristol.ac.uk/physics/people/simon-hanna/overview.html">Simon
-                            Hanna</a></td>
-                        <td><a href="http://www.bris.ac.uk/chemistry/people/jonathan-p-reid/">Jonathan
-                            Reid</a></td>
-                        <td><a href="http://www.bristol.ac.uk/maths/people/silke-e-henkes/index.html">Silke
-                            Henkes</a></td>
-                      </tr>
-                      <tr>
-                        <td><a href="http://www.bris.ac.uk/physics/people/robert-evans/">Bob
-                            Evans</a></td>
-                        <td><a href="https://woolfsonlab.wordpress.com/">Dek
-                            Woolfson</a></td>
-                        <td><a href="https://people.maths.bris.ac.uk/%7Ematbl/">Tannie
-                            Liverpool</a></td>
-                      </tr>
-                      <tr>
-                        <td><a href="http://www.bris.ac.uk/physics/people/178742/index.html">Paddy
-                            Royall</a></td>
-                        <td><a href="http://www.bris.ac.uk/chemistry/people/adrian-j-mulholland/">Adrian
-                            Mulholland</a></td>
-                        <td><a href="http://www.bristol.ac.uk/maths/people/john-russo/overview.html">John
-                            Russo</a></td>
-                      </tr>
-                      <tr>
-                        <td><a href="http://www.bristol.ac.uk/physics/people/walther-schwarzacher/">Walter
-                            Schwarzacher</a></td>
-                        <td><a href="http://www.bris.ac.uk/chemistry/people/brian-vincent/index.html">Brian
-                            Vincent</a></td>
-                        <td><a href="https://people.maths.bris.ac.uk/%7Emazvs/">Valeriy
-                            Slastikov</a></td>
-                      </tr>
-                      <tr>
-                        <td><a href="http://www.bristol.ac.uk/physics/people/annela-m-seddon/">Annela
-                            Seddon</a></td>
-                        <td><a href="https://glow-wacky.com/">Dave Glowacki</a></td>
-                        <td><a href="http://www.bristol.ac.uk/maths/people/karoline-wiesner/overview.html">Karoline
-                            Wiesner</a></td>
-                      </tr>
-                      <tr>
-                        <td><a href="http://www.bris.ac.uk/physics/people/thomas-j-machon/index.html">Tom
-                            Machon</a></td>
-                        <td><a href="https://taaoliver.com/">Tom Oliver</a></td>
-                        <td><a href="http://www.bristol.ac.uk/maths/people/stephen-r-wiggins/overview.html">Steve
-                            Wiggins</a></td>
-                      </tr>
-                      <tr>
-                        <td><a href="http://www.bristol.ac.uk/physics/people/michael-p-allen/index.html">Mike
-                            Allen</a></td>
-                        <td><a href="http://www.bris.ac.uk/chemistry/people/charl-fj-f-faul/index.html">Charl
-                            Faul</a></td>
-                        <td><a href="http://www.bris.ac.uk/maths/people/rachel-r-bennett/index.html">Rachel
-                            Bennett</a></td>
-                      </tr>
-                      <tr>
-                        <td><a href="http://www.bristol.ac.uk/physics/people/nigel-b-wilding/index.html">Nigel
-                            Wilding</a></td>
-                        <td><a href="http://www.bris.ac.uk/physics/people/178742/index.html">Paddy
-                            Royall</a></td>
-                        <td>&nbsp;</td>
-                      </tr>
-                      <tr>
-                        <td><a href="http://www.bris.ac.uk/physics/people/robert-m-richardson/index.html">Rob
-                            Richardson</a></td>
-                        <td><a href="http://www.bris.ac.uk/chemistry/people/adam-w-perriman/index.html">Adam
-                            Perriman</a></td>
-                        <td>&nbsp;</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <table>
-                    <tbody>
-                      <tr>
-                        <th>
-                          <h3>Earth Sciences</h3>
-                        </th>
-                        <th>
-                          <h3>Engineering Mathematics</h3>
-                        </th>
-                        <th>
-                          <h3>Biochemistry</h3>
-                        </th>
-                      </tr>
-                      <tr>
-                        <td><a href="http://www.bristol.ac.uk/earthsciences/people/katharine-v-cashman/overview.html">Kathy Cashman</a></td>
-                        <td><a href="http://www.bristol.ac.uk/biology/people/luca-giuggioli/overview.html">Luca Giuggioli</a></td>
-                        <td><a href="http://www.bris.ac.uk/biochemistry/people/ross-l-anderson/index.html">Ross Anderson</a></td>
-                      </tr>
-                      <tr>
-                        <td><a href="https://seis.bristol.ac.uk/%7Eglhmm/">Heidy Mader</a></td>
-                        <td><a href="http://hauertlab.com/">Sabine Hauert</a></td>
-                        <td><a href="https://woolfsonlab.wordpress.com/">Dek Woolfson</a></td>
-                      </tr>
-                      <tr>
-                        <td><a href="http://www.bristol.ac.uk/earthsciences/people/richard-a-brooker/overview.html">Richard Brooker</a></td>
-                        <td><a href="http://www.bristol.ac.uk/engineering/departments/engineering-mathematics/people/lucia-marucci/index.html">Lucia Marucci</a></td>
-                        <td>
-                          <h3>Biology</h3>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td><a href="http://www.bristol.ac.uk/earthsciences/people/james-w-drewitt/index.html">James
-                            Drewitt</a></td>
-                        <td><a href="http://www.bris.ac.uk/engineering/people/jonathan-m-rossiter/index.html">Jonathan
-                            Rossiter</a></td>
-                        <td><a href="http://www.bristol.ac.uk/biology/people/christos-c-ioannou/">Christos
-                            Ioannou</a></td>
-                      </tr>
-                      <tr>
-                        <td></td>
-                        <td><a href="http://www-users.york.ac.uk/~hg884">Hermes Gadêlha</a></td>
-                        <td></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <table>
-                    <tbody>
-                      <tr>
-                        <th>
-                          <h3>Cellular and Molecular Medicine</h3>
-                        </th>
-                        <th>
-                          <h3>Mechanical Engineering</h3>
-                        </th>
-                        <th>
-                          <h3>Physiology, Pharmacology and Neuroscience</h3>
-                        </th>
-                      </tr>
-                      <tr>
-                        <td><a href="http://www.bris.ac.uk/chemistry/people/adam-w-perriman/index.html">Adam
-                            Perriman</a></td>
-                        <td><a href="http://www.bristol.ac.uk/engineering/people/valeska-ting/overview.html">Valeska
-                            Ting</a></td>
-                        <td><a href="http://www.bristol.ac.uk/phys-pharm/people/chrissy-l-hammond/overview.html">Chrissy
-                            Hammond</a></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <table>
-                    <tbody>
-                      <tr>
-                        <th>
-                          <h3>University of Bath</h3>
-                        </th>
-                        <th>
-                          <h3>&nbsp;</h3>
-                        </th>
-                        <th>
-                          <h3>University of Exeter</h3>
-                        </th>
-                      </tr>
-                      <tr>
-                        <td><a href="https://researchportal.bath.ac.uk/en/persons/philip-salmon">Phil
-                            Salmon</a></td>
-                        <td><a href="https://researchportal.bath.ac.uk/en/persons/anita-zeidler">Anita
-                            Zeidler</a></td>
-                        <td><a href="http://emps.exeter.ac.uk/physics-astronomy/staff/dp413">Dave
-                            Philips</a></td>
-                      </tr>
-                      <tr>
-                        <td><a href="https://researchportal.bath.ac.uk/en/persons/anton-souslov">Anton
-                            Souslov</a></td>
-                        <td><a href="http://www.bath.ac.uk/chemistry/contacts/academics/karen_edler/%20">Karen
-                            Edler</a></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <h2>Past Events</h2>
-                  
-                    <div><em>Metamaterials and Topological Mechanics</em></div>
-                    <div>Prof. Tom Lubensky, University of Pennsylvania</div>
-                    <div>Tuesday, 28 May 2019, 13:15, Room 4W 1.7 (The Wolfson Room), University of Bath</div>
-                    <p>&nbsp;</p>
-                  
-                    <div><em>What are SMART physical scientists interested in?</em></div>
-                    <div>Dr. Nicoletta Gnan, Sapienza University of Rome</div>
-                    <div>Tuesday, 28 May 2019, 18:00, Lecture Theatre 4, School of Chemistry, University of Bristol</div>
-                    <p>&nbsp;</p>
+  <script type="text/javascript" async="" src="./content/saved_resource%281%29"></script>
+  <!-- Custom CSS Styling -->
+  <style>
+    #logo_column {
+      float: left;
+      width: 30%;
+      margin-right: 3%;
+    }
 
-                    <div><em>Twisted topological tangles: or the knot theory of knitting</em></div>
-                    <div>Dr. Sabetta Matsumoto, Georgia Institute of Technology</div>
-                    <div>Wednesday, 29 May 2019, 14:00</div>
-                    <div>Seminar Room, NSQI building, University of Bristol</div>
-                    <p>&nbsp;</p>
-                  
-                    <div><em>Frontiers in Glass: At the Interface between Earth Science and Synthetic Materials</em></div>
-                    <div>Room G25, School of Earth Sciences, University of Bristol, 20th - 21th May 2019</div>
-                    <p>&nbsp;</p>
-                  
-                    <div>Fausto Martelli, IBM Research</div>
-                    <div><em>The mysteries of water: a journey of (almost) 100 years</em></div>
-                    <div>Room SM1, School of Mathematics, University of Bristol, 11th April 2019</div>
-                    <p>&nbsp;</p>
-                    
-                    <div>Ian Griffiths, Mathematical Institute, University of
-                      Oxford</div>
-                    <div><em>iPhones and Dysons: using fluid dynamics to tailor
-                        technology</em></div>
-                    <div>Main Maths Building, SM3, Thursday 24th January 2019,
-                      2:00 pm – 3:00 pm</div>
-                    <p>&nbsp;</p>
-                    
-                    <div><em>The physics and engineering of active matter</em></div>
-                    <div>Roberto di Leonardo, Sapienza Università di Roma</div>
-                    <div>NSQI seminar room, NSQI building, Wednesday 30th January, 2019, 2:00 pm – 5:00 pm</div>
-                    <p>&nbsp;</p>
-                    
-                    <div><em>Plasticity, shear-banding and rejuvenation in model
-                      glasses</em></div>
-                    <div>Damien Vandembroucq, ESPCI Paris</div>
-                    <div>3.34, Physics, Wednesday 5th December 2018, 14:00</div>
-                    <p>&nbsp;</p>
-                    
-                    <div><em>Soft matter network lunch</em></div>
-                    <div>SM1, School of Maths, Wednesday 5th December 2018, 15:00</div>
-                    <p>&nbsp;</p>
-                    
-                    <div><em>Acoustic and hyperelastic metamaterials – stretching
-                      the truth?</em></div>
-                    <div>William Parnell, University of Manchester</div>
-                    <div>Main Maths Building, SM3, Thursday 6th December 2018,
-                    2:00 pm – 3:00 pm</div>
-                    <p>&nbsp;</p>
-                    
-                    <div><em>Painting with Bacteria</em></div>
-                    <div>Wilson Poon, University of Edinburgh</div>
-                    <div>3.34, Physics, Thursday 6th December 2018, 16:00</div>
-                    <p>&nbsp;</p>
-                    
-                    <div><em>Dense packing of spheres in cylinders</em></div>
-                    <div>Adil Mughal, Aberystwyth University</div>
-                    <p>Room 3.34 Physics, Wednesday 23 January 2019, 2:00pm-3:00pm</p>
-                    <p>&nbsp;</p>
-                </section>
-                <!-- /.entry -->
-                <div class="fix"></div>
-              </article>
-              <!-- /.post --> </section>
-            <!-- /#main --> </div>
-          <!-- /#main-sidebar-container --> </div>
-        <!-- /#content -->
-        <!--#footer-widgets-container-->
-        <div id="footer-widgets-container"> </div>
-        <!--/#footer_widgets_container_end-->
-        <!--#footer_container_start-->
-        <div id="footer-container">
-          <footer id="footer" class="col-full">
-            <div id="copyright" class="col-left">
-              <p>© 2019 School of Mathematics Research. All Rights Reserved. </p>
+    #logo_row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+  </style>
+</head>
+
+<body class="page-template-default page page-id-3553 safari alt-style-default one-col width-960 one-col-960 full-width full-header full-footer">
+  <div id="wrapper">
+    <div id="inner-wrapper">
+      <!--#header-container-->
+      <div id="header-container">
+        <header id="header" class="col-full">
+          <h1 id="logo"> <span class="title" style="color:white">Soft Matter Network</span> </h1>
+          <div class="header-widget">
+            <div id="logo_row">
+              <div id="logo_column">
+                <a href="https://www.bris.ac.uk/">
+                  <img src="./content/uob_logo_white.png" alt="University of Bristol">
+                </a>
+              </div>
+              <div id="logo_column">
+                <a href="https://www.exeter.ac.uk">
+                  <img src="./content/uoex_logo_white.png" alt="University of Exeter">
+                </a>
+              </div>
+              <div id="logo_column">
+                <a href="https://www.bath.ac.uk">
+                  <img src="./content/uobath_logo_white.png" alt="University of Bath">
+                </a>
+              </div>
             </div>
-            <div id="credit" class="col-right">
-            </div>
-          </footer>
+          </div>
+        </header>
+      </div>
+      <!--/#header-container-->
+      <!--#nav-container-->
+      <!--/#nav-container-->
+      <!-- #content Starts -->
+      <div id="content" class="col-full">
+        <div id="main-sidebar-container">
+          <!-- #main Starts -->
+          <section id="main">
+            <div class="breadcrumb breadcrumbs woo-breadcrumbs"></div>
+            <article class="post-3553 page type-page status-publish hentry">
+              <section class="entry">
+                <div class="threecol-one">
+                  <div id="links2">
+
+                    <h2><img class="wp-image-3701 alignnone" src="./content/poster.png" alt="" height="736" width="520"></h2>
+                    <div>&nbsp;</div>
+                    <div id="links2">
+                      <h2>Regular seminar series:</h2>
+                      <h4><a href="https://www.bristolmathsresearch.org/events/fluids-and-materials/">Fluids
+                          and Materials Seminars</a></h4>
+                      <h4><a href="http://www.bristol.ac.uk/physics/events/theoretical/">Theoretical
+                          Physics and Biological Soft and Complex Matter
+                          Seminars</a></h4>
+                      <h4><a href="https://www.bristolmathsresearch.org/events/mathematical-physics/">Mathematical
+                          Physics Seminars</a></h4>
+                      <h4><a href="http://www.bristol.ac.uk/physics/events/colloquia/">Physics
+                          Colloquia</a></h4>
+                      <h4><a href="http://www.bristol.ac.uk/chemistry/events/">Chemistry
+                          Seminars and Events</a></h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="threecol-two last">
+                  <p>The <strong>Soft Matter Network</strong> brings
+                    together researchers working in Soft Materials across the
+                    University from nine departments, including
+                    Biochemistry, Cellular and Molecular Medicine, Earth
+                    Sciences, Engineering Maths and Physiology, Pharmacology
+                    and Neuroscience in addition to the traditional areas of
+                    Physics, Chemistry and Maths.</p>
+                  <p>In time we hope this will lead to productive
+                    collaborations and provide opportunities for new
+                    research directions.</p>
+                  <p>The network launched on Wed. 5th Dec 2018 (poster on the
+                    left).</p>
+
+                  <h1>Upcoming events and seminars:</h1>
+
+                </div>
+                <div class="clear"></div>
+                <div id="links2">
+                  <h2>Soft Matter Network Events</h2>
+                </div>
+                <h3 class="p1"><em>International Soft Matter Workshop IX</em>,
+                  Cornwall, February 28-March 2 2019</h3>
+                <h3 class="p1"><em>Soft Matter of Life</em>, Symposium,
+                  plenary talk&nbsp; by Stephen Mann, May 2019</h3>
+                <h3 class="p1"><em>Soft Matter in Geological Systems</em>,
+                  Heidy Mader, late spring 2019</h3>
+                <h3 class="p1"><em>Water UK</em>,
+                  John Russo, late spring 2019</h3>
+                <h3><em>Nucleation and Glassy Behaviour in Aerosols</em>,
+                  Jonathan Reid, early summer 2019</h3>
+                <p><img class="alignnone wp-image-3726 " src="./content/cornwall2017-300x163.jpg" alt="" srcset="https://www.bristolmathsresearch.org/wp-content/uploads/2018/12/cornwall2017-300x163.jpg 300w, https://www.bristolmathsresearch.org/wp-content/uploads/2018/12/cornwall2017-768x418.jpg 768w, https://www.bristolmathsresearch.org/wp-content/uploads/2018/12/cornwall2017-1024x558.jpg 1024w" sizes="(max-width: 600px) 100vw, 600px" height="326" width="600"></p>
+                <div>&nbsp;</div>
+                <h2>People</h2>
+                <table>
+                  <tbody>
+                    <tr>
+                      <th>
+                        <h3>Physics</h3>
+                      </th>
+                      <th>
+                        <h3>Chemistry</h3>
+                      </th>
+                      <th>
+                        <h3>Mathematics</h3>
+                      </th>
+                    </tr>
+                    <tr>
+                      <td><a href="http://www.bris.ac.uk/physics/people/ashraf-a-alam/overview.html">Ashraf
+                          Alam</a></td>
+                      <td><a href="http://www.bris.ac.uk/chemistry/people/paul-bartlett/index.html">Paul
+                          Bartlett</a></td>
+                      <td><a href="https://www.isaacchenchiah.org/">Isaac
+                          Chenchiah/</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="http://www.bristol.ac.uk/physics/people/adrian-c-barnes/overview.html">Adrian
+                          Barnes</a></td>
+                      <td><a href="http://www.bris.ac.uk/chemistry/people/wuge-h-briscoe/index.html">Wuge
+                          Briscoe</a></td>
+                      <td><a href="http://www.bristol.ac.uk/maths/people/carl-p-dettmann/index.html">Carl
+                          Dettmann</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="http://www.bris.ac.uk/physics/people/duncan-r-casey/index.html">Duncan
+                          Casey</a></td>
+                      <td><a href="http://www.chm.bris.ac.uk/pt/jeroen/jsvdhome.html">Jeroen
+                          van Duijneveldt</a></td>
+                      <td><a href="https://jpkeating.wordpress.com/">Jon
+                          Keating</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="http://www.bris.ac.uk/physics/people/person/michael-f-faulkner/overview.html">Michael
+                          Faulkner</a></td>
+                      <td><a href="http://www.stephenmann.co.uk/">Steve Mann</a></td>
+                      <td><a href="https://people.maths.bris.ac.uk/%7Emajge/">Jens
+                          Eggers</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="http://www.bristol.ac.uk/physics/people/simon-hanna/overview.html">Simon
+                          Hanna</a></td>
+                      <td><a href="http://www.bris.ac.uk/chemistry/people/jonathan-p-reid/">Jonathan
+                          Reid</a></td>
+                      <td><a href="http://www.bristol.ac.uk/maths/people/silke-e-henkes/index.html">Silke
+                          Henkes</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="http://www.bris.ac.uk/physics/people/robert-evans/">Bob
+                          Evans</a></td>
+                      <td><a href="https://woolfsonlab.wordpress.com/">Dek
+                          Woolfson</a></td>
+                      <td><a href="https://people.maths.bris.ac.uk/%7Ematbl/">Tannie
+                          Liverpool</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="http://www.bris.ac.uk/physics/people/178742/index.html">Paddy
+                          Royall</a></td>
+                      <td><a href="http://www.bris.ac.uk/chemistry/people/adrian-j-mulholland/">Adrian
+                          Mulholland</a></td>
+                      <td><a href="http://www.bristol.ac.uk/maths/people/john-russo/overview.html">John
+                          Russo</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="http://www.bristol.ac.uk/physics/people/walther-schwarzacher/">Walter
+                          Schwarzacher</a></td>
+                      <td><a href="http://www.bris.ac.uk/chemistry/people/brian-vincent/index.html">Brian
+                          Vincent</a></td>
+                      <td><a href="https://people.maths.bris.ac.uk/%7Emazvs/">Valeriy
+                          Slastikov</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="http://www.bristol.ac.uk/physics/people/annela-m-seddon/">Annela
+                          Seddon</a></td>
+                      <td><a href="https://glow-wacky.com/">Dave Glowacki</a></td>
+                      <td><a href="http://www.bristol.ac.uk/maths/people/karoline-wiesner/overview.html">Karoline
+                          Wiesner</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="http://www.bris.ac.uk/physics/people/thomas-j-machon/index.html">Tom
+                          Machon</a></td>
+                      <td><a href="https://taaoliver.com/">Tom Oliver</a></td>
+                      <td><a href="http://www.bristol.ac.uk/maths/people/stephen-r-wiggins/overview.html">Steve
+                          Wiggins</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="http://www.bristol.ac.uk/physics/people/michael-p-allen/index.html">Mike
+                          Allen</a></td>
+                      <td><a href="http://www.bris.ac.uk/chemistry/people/charl-fj-f-faul/index.html">Charl
+                          Faul</a></td>
+                      <td><a href="http://www.bris.ac.uk/maths/people/rachel-r-bennett/index.html">Rachel
+                          Bennett</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="http://www.bristol.ac.uk/physics/people/nigel-b-wilding/index.html">Nigel
+                          Wilding</a></td>
+                      <td><a href="http://www.bris.ac.uk/physics/people/178742/index.html">Paddy
+                          Royall</a></td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td><a href="http://www.bris.ac.uk/physics/people/robert-m-richardson/index.html">Rob
+                          Richardson</a></td>
+                      <td><a href="http://www.bris.ac.uk/chemistry/people/adam-w-perriman/index.html">Adam
+                          Perriman</a></td>
+                      <td>&nbsp;</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table>
+                  <tbody>
+                    <tr>
+                      <th>
+                        <h3>Earth Sciences</h3>
+                      </th>
+                      <th>
+                        <h3>Engineering Mathematics</h3>
+                      </th>
+                      <th>
+                        <h3>Biochemistry</h3>
+                      </th>
+                    </tr>
+                    <tr>
+                      <td><a href="http://www.bristol.ac.uk/earthsciences/people/katharine-v-cashman/overview.html">Kathy Cashman</a></td>
+                      <td><a href="http://www.bristol.ac.uk/biology/people/luca-giuggioli/overview.html">Luca Giuggioli</a></td>
+                      <td><a href="http://www.bris.ac.uk/biochemistry/people/ross-l-anderson/index.html">Ross Anderson</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="https://seis.bristol.ac.uk/%7Eglhmm/">Heidy Mader</a></td>
+                      <td><a href="http://hauertlab.com/">Sabine Hauert</a></td>
+                      <td><a href="https://woolfsonlab.wordpress.com/">Dek Woolfson</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="http://www.bristol.ac.uk/earthsciences/people/richard-a-brooker/overview.html">Richard Brooker</a></td>
+                      <td><a href="http://www.bristol.ac.uk/engineering/departments/engineering-mathematics/people/lucia-marucci/index.html">Lucia Marucci</a></td>
+                      <td>
+                        <h3>Biology</h3>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><a href="http://www.bristol.ac.uk/earthsciences/people/james-w-drewitt/index.html">James
+                          Drewitt</a></td>
+                      <td><a href="http://www.bris.ac.uk/engineering/people/jonathan-m-rossiter/index.html">Jonathan
+                          Rossiter</a></td>
+                      <td><a href="http://www.bristol.ac.uk/biology/people/christos-c-ioannou/">Christos
+                          Ioannou</a></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td><a href="http://www-users.york.ac.uk/~hg884">Hermes Gadêlha</a></td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table>
+                  <tbody>
+                    <tr>
+                      <th>
+                        <h3>Cellular and Molecular Medicine</h3>
+                      </th>
+                      <th>
+                        <h3>Mechanical Engineering</h3>
+                      </th>
+                      <th>
+                        <h3>Physiology, Pharmacology and Neuroscience</h3>
+                      </th>
+                    </tr>
+                    <tr>
+                      <td><a href="http://www.bris.ac.uk/chemistry/people/adam-w-perriman/index.html">Adam
+                          Perriman</a></td>
+                      <td><a href="http://www.bristol.ac.uk/engineering/people/valeska-ting/overview.html">Valeska
+                          Ting</a></td>
+                      <td><a href="http://www.bristol.ac.uk/phys-pharm/people/chrissy-l-hammond/overview.html">Chrissy
+                          Hammond</a></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table>
+                  <tbody>
+                    <tr>
+                      <th>
+                        <h3>University of Bath</h3>
+                      </th>
+                      <th>
+                        <h3>&nbsp;</h3>
+                      </th>
+                      <th>
+                        <h3>University of Exeter</h3>
+                      </th>
+                    </tr>
+                    <tr>
+                      <td><a href="https://researchportal.bath.ac.uk/en/persons/philip-salmon">Phil
+                          Salmon</a></td>
+                      <td><a href="https://researchportal.bath.ac.uk/en/persons/anita-zeidler">Anita
+                          Zeidler</a></td>
+                      <td><a href="http://emps.exeter.ac.uk/physics-astronomy/staff/dp413">Dave
+                          Philips</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="https://researchportal.bath.ac.uk/en/persons/anton-souslov">Anton
+                          Souslov</a></td>
+                      <td><a href="http://www.bath.ac.uk/chemistry/contacts/academics/karen_edler/%20">Karen
+                          Edler</a></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <h2>Past Events</h2>
+
+                <div><em>Metamaterials and Topological Mechanics</em></div>
+                <div>Prof. Tom Lubensky, University of Pennsylvania</div>
+                <div>Tuesday, 28 May 2019, 13:15, Room 4W 1.7 (The Wolfson Room), University of Bath</div>
+                <p>&nbsp;</p>
+
+                <div><em>What are SMART physical scientists interested in?</em></div>
+                <div>Dr. Nicoletta Gnan, Sapienza University of Rome</div>
+                <div>Tuesday, 28 May 2019, 18:00, Lecture Theatre 4, School of Chemistry, University of Bristol</div>
+                <p>&nbsp;</p>
+
+                <div><em>Twisted topological tangles: or the knot theory of knitting</em></div>
+                <div>Dr. Sabetta Matsumoto, Georgia Institute of Technology</div>
+                <div>Wednesday, 29 May 2019, 14:00</div>
+                <div>Seminar Room, NSQI building, University of Bristol</div>
+                <p>&nbsp;</p>
+
+                <div><em>Frontiers in Glass: At the Interface between Earth Science and Synthetic Materials</em></div>
+                <div>Room G25, School of Earth Sciences, University of Bristol, 20th - 21th May 2019</div>
+                <p>&nbsp;</p>
+
+                <div>Fausto Martelli, IBM Research</div>
+                <div><em>The mysteries of water: a journey of (almost) 100 years</em></div>
+                <div>Room SM1, School of Mathematics, University of Bristol, 11th April 2019</div>
+                <p>&nbsp;</p>
+
+                <div>Ian Griffiths, Mathematical Institute, University of
+                  Oxford</div>
+                <div><em>iPhones and Dysons: using fluid dynamics to tailor
+                    technology</em></div>
+                <div>Main Maths Building, SM3, Thursday 24th January 2019,
+                  2:00 pm – 3:00 pm</div>
+                <p>&nbsp;</p>
+
+                <div><em>The physics and engineering of active matter</em></div>
+                <div>Roberto di Leonardo, Sapienza Università di Roma</div>
+                <div>NSQI seminar room, NSQI building, Wednesday 30th January, 2019, 2:00 pm – 5:00 pm</div>
+                <p>&nbsp;</p>
+
+                <div><em>Plasticity, shear-banding and rejuvenation in model
+                    glasses</em></div>
+                <div>Damien Vandembroucq, ESPCI Paris</div>
+                <div>3.34, Physics, Wednesday 5th December 2018, 14:00</div>
+                <p>&nbsp;</p>
+
+                <div><em>Soft matter network lunch</em></div>
+                <div>SM1, School of Maths, Wednesday 5th December 2018, 15:00</div>
+                <p>&nbsp;</p>
+
+                <div><em>Acoustic and hyperelastic metamaterials – stretching
+                    the truth?</em></div>
+                <div>William Parnell, University of Manchester</div>
+                <div>Main Maths Building, SM3, Thursday 6th December 2018,
+                  2:00 pm – 3:00 pm</div>
+                <p>&nbsp;</p>
+
+                <div><em>Painting with Bacteria</em></div>
+                <div>Wilson Poon, University of Edinburgh</div>
+                <div>3.34, Physics, Thursday 6th December 2018, 16:00</div>
+                <p>&nbsp;</p>
+
+                <div><em>Dense packing of spheres in cylinders</em></div>
+                <div>Adil Mughal, Aberystwyth University</div>
+                <p>Room 3.34 Physics, Wednesday 23 January 2019, 2:00pm-3:00pm</p>
+                <p>&nbsp;</p>
+              </section>
+              <!-- /.entry -->
+              <div class="fix"></div>
+            </article>
+            <!-- /.post -->
+          </section>
+          <!-- /#main -->
         </div>
-        <!--/#footer_container_end--> </div>
-      <!-- /#inner-wrapper --> </div>
-    <!-- /#wrapper -->
-    <div class="fix"></div>
-    <!--/.fix-->
-    <script type="text/html" id="tmpl-wp-playlist-current-item">
-	<# if ( data.image ) { #>
-	<img src="{{ data.thumb.src }}" alt="" />
-	<# } #>
-	<div class="wp-playlist-caption">
-		<span class="wp-playlist-item-meta wp-playlist-item-title">&#8220;{{ data.title }}&#8221;</span>
-		<# if ( data.meta.album ) { #><span class="wp-playlist-item-meta wp-playlist-item-album">{{ data.meta.album }}</span><# } #>
-		<# if ( data.meta.artist ) { #><span class="wp-playlist-item-meta wp-playlist-item-artist">{{ data.meta.artist }}</span><# } #>
-	</div>
-</script> <script type="text/html" id="tmpl-wp-playlist-item">
-	<div class="wp-playlist-item">
-		<a class="wp-playlist-caption" href="{{ data.src }}">
-			{{ data.index ? ( data.index + '. ' ) : '' }}
-			<# if ( data.caption ) { #>
-				{{ data.caption }}
-			<# } else { #>
-				<span class="wp-playlist-item-title">&#8220;{{{ data.title }}}&#8221;</span>
-				<# if ( data.artists && data.meta.artist ) { #>
-				<span class="wp-playlist-item-artist"> &mdash; {{ data.meta.artist }}</span>
-				<# } #>
-			<# } #>
-		</a>
-		<# if ( data.meta.length_formatted ) { #>
-		<div class="wp-playlist-item-length">{{ data.meta.length_formatted }}</div>
-		<# } #>
-	</div>
-</script> <script type="text/javascript">
-jQuery( document ).ready( function( $ ) {
-	var extra_css = $( "#views-extra-css" ) ? $( "#views-extra-css" ).text() : null;	if( extra_css ) {		$( 'head' ).append( '<style>' + extra_css + '</style>' );
-		$( "#views-extra-css" ).remove();	}
-	$( 'head' ).append( $( "#views-extra-css-ie7" ).html() );
-	$( "#views-extra-css-ie7" ).remove();});
-</script><img alt="css.php" src="./content/css.php"
-      height="1"
-      width="1">
-    <!-- No script for Juiz Last Tweet Widget :) -->
-    <script type="text/javascript" src="./content/core.min.js"></script>
-    <script type="text/javascript" src="./content/datepicker.min.js"></script>
-    <script type="text/javascript">
-jQuery(document).ready(function(jQuery){jQuery.datepicker.setDefaults({"closeText":"Close","currentText":"Today","monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Previous","dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"dateFormat":"dS MM yy","firstDay":1,"isRTL":false});});
-</script> <script type="text/javascript" src="./content/wp-mediaelement.min.js"></script>
-    <script type="text/javascript" src="./content/underscore.min.js"></script>
-    <script type="text/javascript">
-/* <![CDATA[ */
-var _wpUtilSettings = {"ajax":{"url":"\/wp-admin\/admin-ajax.php"}};
-var _wpUtilSettings = {"ajax":{"url":"\/wp-admin\/admin-ajax.php"}};
-/* ]]> */
-</script> <script type="text/javascript" src="./content/wp-util.min.js"></script>
-    <script type="text/javascript" src="./content/backbone.min.js"></script>
-    <script type="text/javascript" src="./content/wp-playlist.min.js"></script>
-    <script type="text/javascript">
-/* <![CDATA[ */
-var wpv_pagination_local = {"front_ajaxurl":"http:\/\/www.bristolmathsresearch.org\/wp-admin\/admin-ajax.php","calendar_image":"http:\/\/www.bristolmathsresearch.org\/wp-content\/plugins\/wp-views\/embedded\/res\/img\/calendar.gif","calendar_text":"Select date","datepicker_min_date":null,"datepicker_max_date":null,"resize_debounce_tolerance":"100","datepicker_style_url":"http:\/\/www.bristolmathsresearch.org\/wp-content\/plugins\/types\/vendor\/toolset\/toolset-common\/toolset-forms\/css\/wpt-jquery-ui\/jquery-ui-1.11.4.custom.css"};
-/* ]]> */
-</script> <script type="text/javascript" src="./content/wpv-pagination-embedded.js"></script>
-    <script type="text/javascript" src="./content/jquery.qtip.min.js"></script>
-    <script type="text/javascript" src="./content/moment.min.js"></script>
-    <script type="text/javascript" src="./content/moment-timezone-with-data.min.js"></script>
-    <script type="text/javascript">
-/* <![CDATA[ */
-var simcal_default_calendar = {"ajax_url":"\/wp-admin\/admin-ajax.php","nonce":"f3adfd8b69","locale":"en_GB","text_dir":"ltr","months":{"full":["January","February","March","April","May","June","July","August","September","October","November","December"],"short":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]},"days":{"full":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"short":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"]},"meridiem":{"AM":"AM","am":"am","PM":"PM","pm":"pm"}};
-/* ]]> */
-</script> <script type="text/javascript" src="./content/default-calendar.min.js"></script>
-    <script type="text/javascript" src="./content/imagesloaded.pkgd.min.js"></script>
-    <script type="text/javascript" src="./content/wp-embed.min.js"></script>
-    <!-- Page generated by LiteSpeed Cache 2.9 on 2019-01-23 16:55:23 -->
-    
-  </body>
+        <!-- /#main-sidebar-container -->
+      </div>
+      <!-- /#content -->
+      <!--#footer-widgets-container-->
+      <div id="footer-widgets-container"> </div>
+      <!--/#footer_widgets_container_end-->
+      <!--#footer_container_start-->
+      <div id="footer-container">
+        <footer id="footer" class="col-full">
+          <div id="copyright" class="col-left">
+            <p>© 2019 School of Mathematics Research. All Rights Reserved. </p>
+          </div>
+          <div id="credit" class="col-right">
+          </div>
+        </footer>
+      </div>
+      <!--/#footer_container_end-->
+    </div>
+    <!-- /#inner-wrapper -->
+  </div>
+  <!-- /#wrapper -->
+  <div class="fix"></div>
+  <!--/.fix-->
+  <script type="text/html" id="tmpl-wp-playlist-current-item">
+    <# if ( data.image ) { #>
+      <img src="{{ data.thumb.src }}" alt="" />
+      <# } #>
+        <div class="wp-playlist-caption">
+          <span class="wp-playlist-item-meta wp-playlist-item-title">&#8220;{{ data.title }}&#8221;</span>
+          <# if ( data.meta.album ) { #><span class="wp-playlist-item-meta wp-playlist-item-album">{{ data.meta.album }}</span>
+            <# } #>
+              <# if ( data.meta.artist ) { #><span class="wp-playlist-item-meta wp-playlist-item-artist">{{ data.meta.artist }}</span>
+                <# } #>
+        </div>
+  </script>
+  <script type="text/html" id="tmpl-wp-playlist-item">
+    <div class="wp-playlist-item">
+      <a class="wp-playlist-caption" href="{{ data.src }}">
+        {{ data.index ? ( data.index + '. ' ) : '' }}
+        <# if ( data.caption ) { #>
+          {{ data.caption }}
+          <# } else { #>
+            <span class="wp-playlist-item-title">&#8220;{{{ data.title }}}&#8221;</span>
+            <# if ( data.artists && data.meta.artist ) { #>
+              <span class="wp-playlist-item-artist"> &mdash; {{ data.meta.artist }}</span>
+              <# } #>
+                <# } #>
+      </a>
+      <# if ( data.meta.length_formatted ) { #>
+        <div class="wp-playlist-item-length">{{ data.meta.length_formatted }}</div>
+        <# } #>
+    </div>
+  </script>
+  <script type="text/javascript">
+    jQuery(document).ready(function($) {
+      var extra_css = $("#views-extra-css") ? $("#views-extra-css").text() : null;
+      if (extra_css) {
+        $('head').append('<style>' + extra_css + '</style>');
+        $("#views-extra-css").remove();
+      }
+      $('head').append($("#views-extra-css-ie7").html());
+      $("#views-extra-css-ie7").remove();
+    });
+  </script><img alt="css.php" src="./content/css.php" height="1" width="1">
+  <!-- No script for Juiz Last Tweet Widget :) -->
+  <script type="text/javascript" src="./content/core.min.js"></script>
+  <script type="text/javascript" src="./content/datepicker.min.js"></script>
+  <script type="text/javascript">
+    jQuery(document).ready(function(jQuery) {
+      jQuery.datepicker.setDefaults({
+        "closeText": "Close",
+        "currentText": "Today",
+        "monthNames": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+        "monthNamesShort": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+        "nextText": "Next",
+        "prevText": "Previous",
+        "dayNames": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "dayNamesShort": ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+        "dayNamesMin": ["S", "M", "T", "W", "T", "F", "S"],
+        "dateFormat": "dS MM yy",
+        "firstDay": 1,
+        "isRTL": false
+      });
+    });
+  </script>
+  <script type="text/javascript" src="./content/wp-mediaelement.min.js"></script>
+  <script type="text/javascript" src="./content/underscore.min.js"></script>
+  <script type="text/javascript">
+    /* <![CDATA[ */
+    var _wpUtilSettings = {
+      "ajax": {
+        "url": "\/wp-admin\/admin-ajax.php"
+      }
+    };
+    var _wpUtilSettings = {
+      "ajax": {
+        "url": "\/wp-admin\/admin-ajax.php"
+      }
+    };
+    /* ]]> */
+  </script>
+  <script type="text/javascript" src="./content/wp-util.min.js"></script>
+  <script type="text/javascript" src="./content/backbone.min.js"></script>
+  <script type="text/javascript" src="./content/wp-playlist.min.js"></script>
+  <script type="text/javascript">
+    /* <![CDATA[ */
+    var wpv_pagination_local = {
+      "front_ajaxurl": "http:\/\/www.bristolmathsresearch.org\/wp-admin\/admin-ajax.php",
+      "calendar_image": "http:\/\/www.bristolmathsresearch.org\/wp-content\/plugins\/wp-views\/embedded\/res\/img\/calendar.gif",
+      "calendar_text": "Select date",
+      "datepicker_min_date": null,
+      "datepicker_max_date": null,
+      "resize_debounce_tolerance": "100",
+      "datepicker_style_url": "http:\/\/www.bristolmathsresearch.org\/wp-content\/plugins\/types\/vendor\/toolset\/toolset-common\/toolset-forms\/css\/wpt-jquery-ui\/jquery-ui-1.11.4.custom.css"
+    };
+    /* ]]> */
+  </script>
+  <script type="text/javascript" src="./content/wpv-pagination-embedded.js"></script>
+  <script type="text/javascript" src="./content/jquery.qtip.min.js"></script>
+  <script type="text/javascript" src="./content/moment.min.js"></script>
+  <script type="text/javascript" src="./content/moment-timezone-with-data.min.js"></script>
+  <script type="text/javascript">
+    /* <![CDATA[ */
+    var simcal_default_calendar = {
+      "ajax_url": "\/wp-admin\/admin-ajax.php",
+      "nonce": "f3adfd8b69",
+      "locale": "en_GB",
+      "text_dir": "ltr",
+      "months": {
+        "full": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+        "short": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+      },
+      "days": {
+        "full": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "short": ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
+      },
+      "meridiem": {
+        "AM": "AM",
+        "am": "am",
+        "PM": "PM",
+        "pm": "pm"
+      }
+    };
+    /* ]]> */
+  </script>
+  <script type="text/javascript" src="./content/default-calendar.min.js"></script>
+  <script type="text/javascript" src="./content/imagesloaded.pkgd.min.js"></script>
+  <script type="text/javascript" src="./content/wp-embed.min.js"></script>
+  <!-- Page generated by LiteSpeed Cache 2.9 on 2019-01-23 16:55:23 -->
+
+</body>
+
 </html>
