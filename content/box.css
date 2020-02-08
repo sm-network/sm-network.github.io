@@ -1,0 +1,14 @@
+.normal_box{
+  margin-bottom: 10%;
+}
+
+.sub_box{
+  margin-bottom: 5%;
+}
+
+.news_box li {
+  text-align: left;
+  width: 90%;
+  margin-bottom: 12px;
+  position: relative;
+}
