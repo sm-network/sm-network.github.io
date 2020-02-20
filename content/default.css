@@ -1,27 +1,27 @@
 body {
-  background-repeat: no-repeat;
-  background-position: top left;
-  background-attachment: scroll;
-  border-top: 0px solid #000000;
+	background-repeat: no-repeat;
+	background-position: top left;
+	background-attachment: scroll;
+	border-top: 0px solid #000000;
 }
 
 a:link,
 a:visited,
 #loopedSlider a.flex-prev:hover,
 #loopedSlider a.flex-next:hover {
-  color: #1c7698
+	color: #1c7698
 }
 
 .quantity .plus,
 .quantity .minus {
-  background-color: #1c7698;
+	background-color: #1c7698;
 }
 
 a:hover,
 .post-more a:hover,
 .post-meta a:hover,
 .post p.tags a:hover {
-  color: #002f5f
+	color: #002f5f
 }
 
 body #wrapper .button,
@@ -33,8 +33,8 @@ input[type=submit],
 body #wrapper #searchsubmit,
 #navigation ul.cart .button,
 body #wrapper .woo-sc-button {
-  border: none;
-  background: #1c7698
+	border: none;
+	background: #1c7698
 }
 
 body #wrapper .button:hover,
@@ -45,191 +45,202 @@ input[type=submit]:hover,
 body #wrapper #searchsubmit:hover,
 #navigation ul.cart .button:hover,
 body #wrapper .woo-sc-button:hover {
-  border: none;
-  background: #002f5f
+	border: none;
+	background: #002f5f
 }
 
 #header {
-  background-color: #002f5f;
-  background-repeat: no-repeat;
-  background-position: left top;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  border: 0px solid;
+	background-color: #002f5f;
+	background-repeat: no-repeat;
+	background-position: left top;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	border: 0px solid;
 }
 
 #logo {
-  padding-left: 10px;
+	color: white;
+	padding-left: 10px;
 }
 
 .header-widget {
-  padding-right: 10px;
+	padding-right: 10px;
 }
 
 #logo .site-title a {
-  font: normal 30px/1em Arial, sans-serif;
-  color: #ffffff;
+	font: normal 30px/1em Arial, sans-serif;
+	color: #ffffff;
 }
 
 #logo .site-description {
-  font: 300 13px/1em Arial, sans-serif;
-  color: #999999;
+	font: 300 13px/1em Arial, sans-serif;
+	color: #999999;
 }
 
 #header-container {
-  background-color: #002f5f;
+	background-color: #002f5f;
 }
 
 #footer-widgets-container {
-  background-color: #f0f0f0
+	background-color: #f0f0f0
 }
 
 #footer-widgets {
-  border: none;
+	border: none;
 }
 
 #footer-container {
-  background-color: #222222
+	background-color: #222222
 }
 
 #footer-container {
-  border-top: 1px solid #dbdbdb;
+	border-top: 1px solid #dbdbdb;
 }
 
 #footer {
-  border-width: 0 !important;
+	border-width: 0 !important;
 }
 
 body,
 p {
-  font: 300 14px/1.5em Arial, sans-serif;
-  color: #555555;
+	font: 300 14px/1.5em Arial, sans-serif;
+	color: #555555;
 }
 
 h1 {
-  font: bold 28px/1.2em Arial, sans-serif;
-  color: #002f5f;
+	font: bold 28px/1.2em Arial, sans-serif;
+	color: #002f5f;
 }
 
 h2 {
-  font: bold 24px/1.2em Arial, sans-serif;
-  color: #002f5f;
+	font: bold 24px/1.2em Arial, sans-serif;
+	color: #002f5f;
 }
 
 h3 {
-  font: bold 20px/1.2em Arial, sans-serif;
-  color: #002f5f;
+	font: bold 20px/1.2em Arial, sans-serif;
+	color: #002f5f;
 }
 
 h4 {
-  font: bold 16px/1.2em Arial, sans-serif;
-  color: #002f5f;
+	font: bold 16px/1.2em Arial, sans-serif;
+	color: #002f5f;
 }
 
 h5 {
-  font: bold 14px/1.2em Arial, sans-serif;
-  color: #222222;
+	font: bold 14px/1.2em Arial, sans-serif;
+	color: #222222;
 }
 
 h6 {
-  font: bold 12px/1.2em Arial, sans-serif;
-  color: #222222;
+	font: bold 12px/1.2em Arial, sans-serif;
+	color: #222222;
 }
 
 .page-title,
 .post .title,
 .page .title {
-  font: bold 28px/1.1em Arial, sans-serif;
-  color: #222222;
+	font: bold 28px/1.1em Arial, sans-serif;
+	color: #222222;
 }
 
 .post .title a:link,
 .post .title a:visited,
 .page .title a:link,
 .page .title a:visited {
-  color: #222222
+	color: #222222
 }
 
 .post-meta {
-  font: 300 12px/1.5em Arial, sans-serif;
-  color: #999999;
+	font: 300 12px/1.5em Arial, sans-serif;
+	color: #999999;
 }
 
 .entry,
 .entry p {
-  font: 300 15px/1.5em Arial, sans-serif;
-  color: #555555;
+	font: 300 15px/1.5em Arial, sans-serif;
+	color: #555555;
 }
 
 .post-more {
-  font: 300 13px/1.5em Arial, sans-serif;
-  color: ;
-  border-top: 0px solid #e6e6e6;
-  border-bottom: 0px solid #e6e6e6;
+	font: 300 13px/1.5em Arial, sans-serif;
+	color: ;
+	border-top: 0px solid #e6e6e6;
+	border-bottom: 0px solid #e6e6e6;
 }
 
 #post-author,
 #connect {
-  border-top: 1px solid #e6e6e6;
-  border-bottom: 1px solid #e6e6e6;
-  border-left: 1px solid #e6e6e6;
-  border-right: 1px solid #e6e6e6;
-  border-radius: 5px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  background-color: #fafafa
+	border-top: 1px solid #e6e6e6;
+	border-bottom: 1px solid #e6e6e6;
+	border-left: 1px solid #e6e6e6;
+	border-right: 1px solid #e6e6e6;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	background-color: #fafafa
 }
 
 .nav-entries a,
 .woo-pagination {
-  font: 300 13px/1em Arial, sans-serif;
-  color: #888;
+	font: 300 13px/1em Arial, sans-serif;
+	color: #888;
 }
 
 .woo-pagination a,
 .woo-pagination a:hover {
-  color: #888 !important
+	color: #888 !important
 }
 
 #tabs ul.wooTabs li a,
 .widget_woodojo_tabs .tabbable .nav-tabs li a {
-  font-family: ;
+	font-family: ;
 }
 
 @media only screen and (min-width:768px) {}
 
 #footer,
 #footer p {
-  font: 300 13px/1.4em Arial, sans-serif;
-  color: #999999;
+	font: 300 13px/1.4em Arial, sans-serif;
+	color: #999999;
 }
 
 #footer {
-  border-top: 1px solid #dbdbdb;
-  border-bottom: 0px solid;
-  border-left: 0px solid;
-  border-right: 0px solid;
-  border-radius: 0px;
-  -moz-border-radius: 0px;
-  -webkit-border-radius: 0px;
+	border-top: 1px solid #dbdbdb;
+	border-bottom: 0px solid;
+	border-left: 0px solid;
+	border-right: 0px solid;
+	border-radius: 0px;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
 }
 
 .archive_header {
-  font: bold 18px/1em Arial, sans-serif;
-  color: #222222;
+	font: bold 18px/1em Arial, sans-serif;
+	color: #222222;
 }
 
 .archive_header {
-  border-bottom: 1px solid #e6e6e6;
+	border-bottom: 1px solid #e6e6e6;
 }
 
-.big{
-  font-style: italic;
-  font-size: 120%;
+.big {
+	font-style: italic;
+	font-size: 120%;
 }
 
 .small {
-font-size: 80%;
+	font-size: 80%;
+}
+
+#logo_column {
+	float: left;
+	width: 25%;
+	margin: 2%;
+}
+
+#logo_row{
+  width: 100%;
 }
